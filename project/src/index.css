@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Add this to your global CSS file (index.css or App.css) */
+
+/* body {
+  margin: 0;
+} */
+
+/* *, ::before, ::after {
+  box-sizing: none;
+} */
+
+*{
+
+  /* overflow: hidden; */
+  
+}
