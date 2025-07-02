@@ -62,31 +62,26 @@ const PersonalDetailsStep: React.FC<PersonalDetailsStepProps> = ({
             Gender
           </label>
           <div className="flex gap-8">
-            {["male", "female"].map((gender) => (
-              <label key={gender} className="flex items-center cursor-pointer">
-                <input
-                  type="checkbox"
-                  checked={formData.gender === gender}
-                  onChange={() => updateFormData("gender", gender)}
-                  className="sr-only"
-                />
-                <div
-                  className={`w-4 h-4 border-2 rounded-sm mr-3 flex items-center justify-center ${
-                    formData.gender === gender
-                      ? "bg-gray-800 border-gray-800"
-                      : "border-gray-400"
-                  }`}
-                >
-                  {formData.gender === gender && (
-                    <div className="w-2 h-2 bg-white rounded-sm"></div>
-                  )}
-                </div>
-                <span className="text-gray-700 capitalize font-medium">
-                  {gender}
-                </span>
-              </label>
-            ))}
-          </div>
+  {["male", "female"].map((gender) => (
+    <label key={gender} className="flex items-center cursor-pointer">
+      <input
+        type="checkbox"
+        checked={formData.gender === gender}
+        onChange={() => updateFormData("gender", gender)}
+        className="sr-only"
+      />
+      <div
+        className={`w-4 h-4 border-2 rounded-sm mr-3 transition-colors ${
+          formData.gender === gender
+            ? "bg-gray-800 border-gray-800"
+            : "bg-transparent border-gray-400"
+        }`}
+      ></div>
+      <span className="text-gray-700 capitalize font-medium">{gender}</span>
+    </label>
+  ))}
+</div>
+
           {errors.gender && (
             <p className="text-red-500 text-sm mt-2">{errors.gender}</p>
           )}
