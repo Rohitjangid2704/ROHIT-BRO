@@ -14,7 +14,7 @@ export default {
       center: true,
       padding: "2rem",
       screens: {
-        "xl": "1600px",
+        xl: "1600px",
       },
     },
     extend: {
@@ -62,7 +62,6 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Custom colors for the fitness website
         fitness: {
           purple: "#B388FF",
           "purple-light": "#E1D2FF",
@@ -84,8 +83,10 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ["'Source Sans 3'", "Inter", "sans-serif"],
         heading: ["Poppins", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        jakarta: ["'Plus Jakarta Sans'", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -94,20 +95,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
