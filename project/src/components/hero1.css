@@ -21,6 +21,7 @@
     background-size: cover;
     background-position: center;
     z-index: -1000;
+    max-height: 757px;
   }
 }
 
@@ -50,7 +51,7 @@
 }
 
 .hero-background-text h1 {
-  font-size: 60px;
+  font-size: 80%;
   font-weight: 800;
   color: #e7e7e7;
   opacity: 0.4;
@@ -92,6 +93,7 @@
   .hero-text {
     margin-bottom: 0;
     text-align: start;
+    margin-top: 3rem;
   }
 }
 
@@ -484,7 +486,7 @@
 
 @media (max-width: 499px) {
   .hero-button-container {
-    display: block;
+    display: none;
     width: 50%;
   }
 }
@@ -511,6 +513,7 @@
   .hero-image-container {
     justify-content: flex-end; 
     padding-right: 0;
+    margin-top: 4px;
   }
   
  

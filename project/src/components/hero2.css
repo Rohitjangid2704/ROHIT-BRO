@@ -27,7 +27,7 @@
 
 @media (min-width: 480px) {
   .diy-program-container {
-    height: 100vh;
+    max-height: 100vh;
   }
 }
 
@@ -37,6 +37,13 @@
     background-size: cover;
     background-position: center;
     z-index: -1000;
+    /* max-height: 750px; */
+  }
+}
+
+@media (max-width: 480px){
+  .diy-program-container{
+    max-height: 760px;
   }
 }
 
@@ -106,7 +113,7 @@
 
 @media (max-width: 480px) {
   .diy-program-text-section {
-    margin-bottom: 0;
+    margin-top: 2.5rem;
     text-align: start;
   }
 }
@@ -502,7 +509,7 @@
 
 @media (max-width: 499px) {
   .diy-program-cta-container {
-    display: block;
+    display: none;
     width: 100%;
 
   }
@@ -531,6 +538,7 @@
   .diy-program-image-wrapper {
     justify-content: flex-end;
     padding-right: 0;
+    margin-top: 1rem;
   }
 
   .diy-program-image-badge {
