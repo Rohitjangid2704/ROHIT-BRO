@@ -548,3 +548,149 @@
     top: auto;
   }
 }
+
+
+
+
+
+/* Large screens (1085px to 1440px) */
+@media (min-width: 1085px) and (max-width: 1440px) {
+  .diy-program-container {
+    max-height: 800px;
+    padding: 2rem;
+  }
+  
+  .diy-program-image-wrapper {
+    justify-content: flex-end;
+    padding-right: 2rem;
+    margin-top: 8rem;
+  }
+  
+  .diy-program-main-image {
+    max-width: 500px;
+  }
+  
+  .diy-program-background-text h1 {
+    font-size: 350px;
+    opacity: 0.7;
+    bottom: -40px;
+  }
+  
+  .diy-program-main-title {
+    font-size: 70px;
+  }
+  
+  .diy-program-image-badge {
+    left: 50px;
+    bottom: 42%;
+    font-size: 15px;
+    max-width: 150px;
+  }
+  .diy-program-gradient-overlay{
+    margin-left: 5rem;
+  }
+}
+
+/* Medium screens (769px to 1084px) */
+@media (min-width: 769px) and (max-width: 1084px) {
+  .diy-program-container {
+    max-height: 760px;
+    /* padding: 1.5rem; */
+  }
+  
+  .diy-program-content-grid {
+    gap: 20px;
+  }
+  
+  .diy-program-background-text h1 {
+    font-size: 280px;
+    opacity: 0.6;
+    bottom: -30px;
+  }
+  
+  .diy-program-main-title {
+    font-size: 56px;
+  }
+  
+  .diy-program-description {
+    font-size: 18px;
+    max-width: 450px;
+  }
+  
+  .diy-program-main-image {
+    width: 420px;
+  }
+  .diy-program-image-wrapper{
+    margin-top: 10rem;
+  }
+  
+  .diy-program-image-badge {
+    left: 40px;
+    bottom: 40%;
+    font-size: 13px;
+    max-width: 130px;
+  }
+}
+
+
+
+
+/* Small tablets to large phones (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .diy-program-container {
+    max-height: 760px;
+    padding: 1.2rem;
+  }
+
+  .diy-program-content-grid {
+    gap: 16px;
+  }
+
+  .diy-program-background-text h1 {
+    font-size: 220px;
+    opacity: 0.5;
+    bottom: -20px;
+  }
+
+  .diy-program-main-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .diy-program-description {
+    font-size: 16px;
+    max-width: 400px;
+    margin-bottom: 24px;
+  }
+
+  .diy-program-features-list {
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .diy-program-main-image {
+    width: 480px;
+  }
+
+  .diy-program-image-wrapper {
+    margin-top: 10rem;
+    justify-content: center;
+  }
+
+  .diy-program-image-badge {
+    left: 30px;
+    bottom: 65%;
+    font-size: 12px;
+    max-width: 120px;
+  }
+
+  .diy-program-cta-button {
+    max-width: 320px;
+    font-size: 15px;
+  }
+
+  .diy-program-gradient-overlay {
+    width: 350px;
+    height: 700px;
+  }
+}

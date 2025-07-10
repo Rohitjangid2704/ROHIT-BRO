@@ -278,6 +278,7 @@
   border-radius: 1px;
 }
 
+
 /* Media Queries */
 @media (min-width: 480px) {
   .hero-container {
@@ -371,13 +372,13 @@
   }
   
   .hero-title {
-    font-size: 52px;
+    font-size: 42px;
     margin-bottom: 24px;
   text-shadow: 2px 2px 0 #b590e2;
   }
   
   .hero-description {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 40px;
     max-width: 500px;
   }
@@ -423,12 +424,12 @@
   }
   
   .hero-image {
-    max-width: 400px;
+    max-width: 350px;
   }
   
   .hero-badge {
     bottom: 33.33%;
-    left: 30px;
+    left: 10px;
     padding: 10px 16px;
     font-size: 14px;
     max-width: 160px;
@@ -484,7 +485,65 @@
     font-size: 90px;
   }
 }
+/* Large screens (1086px to 1441px) */
+@media (min-width: 1086px) and (max-width: 1441px) {
+  .hero-image-container {
+    justify-content: flex-end; 
+    padding-right: 0;
+    margin-top: 1rem;
+  }
+  .hero-container {
+    max-height: 740px;
+  }
+  .hero-badge {
+    left: 70px;
+    right: auto;
+    bottom: 56%;
+    top: auto;
+  }
+  .hero-background-text {
+    bottom: -30px;
+  }
+}
 
+/* Medium screens (≤ 1085px) */
+@media (max-width: 1085px) {
+  .hero-image-container {
+    justify-content: flex-end; 
+    padding-right: 0;
+    margin-top: 10rem;
+  }
+  .hero-container {
+    max-height: 740px;
+  }
+  .hero-badge {
+    left: 30px;
+    right: auto;
+    bottom: 56%;
+    top: auto;
+  }
+  .hero-background-text {
+    bottom: -30px;
+  }
+  .hero-background-text h1 {
+    font-size: 250px;
+  }
+}
+
+@media (min-width: 499px) and (max-width: 769px) {
+    .hero-background-text h1 {
+    font-size: 190px !important;
+  }
+    .hero-container {
+    max-height: 740px !important;
+  }
+  .hero-image{
+    width: 400px;
+  }
+  
+}
+
+/* Small mobile (≤ 499px) */
 @media (max-width: 499px) {
   .hero-button-container {
     display: none;
@@ -492,36 +551,35 @@
   }
 }
 
+/* Extra small mobile (≤ 479px) */
+@media (max-width: 479px) {
+  .hero-image-container {
+    margin-top: 0rem;
+  }
+  .hero-badge {
+    left: 30px;
+  }
+  .hero-background-text h1{
+    font-size: 100px;
+  }
+  .hero-background-text{
+    bottom: 20px;
+  }
+}
+
+/* Tiny mobile (≤ 320px) */
 @media (max-width: 320px) {
   .hero-container {
     padding: 12px;
   }
-  
   .hero-title {
     font-size: 28px;
   }
-  
   .hero-description {
     font-size: 13px;
   }
-  
   .hero-badge {
     font-size: 10px;
     max-width: 100px;
   }
-}
-@media (max-width: 479px) {
-  .hero-image-container {
-    justify-content: flex-end; 
-    padding-right: 0;
-    margin-top: 1rem;
-  }
-  
- 
-    .hero-badge {
-        left: 30px;
-        right: auto;
-        bottom: 56%;
-        top: auto;
-    }
 }
